@@ -62,5 +62,43 @@ Author E-mail: naimlasker@gmail.com
 @import "footer";
 /*---------------------------------------------------- */
 
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
 
+.navbar.dark-mode {
+    background-color: #1f1f1f !important;
+}
 
+.navbar.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+.dark-mode .primary_btn {
+    background-color: #3a3a3a !important;
+    color: #ffffff !important;
+}
+
+#dark-mode-toggle i {
+    font-size: 0.5rem; /* Adjusted size */
+    color: #000000; /* Default color (black) */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+#dark-mode-toggle:hover i {
+    color: $primary-color; /* Change to primary color on hover */
+}
+
+/* Dark mode styles */
+body.dark-mode #dark-mode-toggle i {
+    color: #ffffff; /* Change to white-ish color in dark mode */
+}
+
+body.dark-mode #dark-mode-toggle:hover i {
+    color: $primary-color; /* Change to primary color on hover in dark mode */
+}
+
+#dark-mode-toggle i {
+    font-size: 1.5rem;
+}

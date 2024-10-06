@@ -307,3 +307,21 @@
 		});
 	}
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const navbar = document.querySelector('.navbar');
+
+    toggleButton.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        navbar.classList.toggle('dark-mode');
+
+        // Change icon based on mode
+        if (body.classList.contains('dark-mode')) {
+            toggleButton.innerHTML = '<i class="fa fa-sun"></i>'; // Sun icon for light mode
+        } else {
+            toggleButton.innerHTML = '<i class="fa fa-moon"></i>'; // Moon icon for dark mode
+        }
+    });
+});

@@ -39,7 +39,7 @@
 		a {
 			padding: 0 20px;
 			i {
-				color: #788489;
+				color: #788489 !important;
 				font-size: 22px;
 				@include transition();
 				@media (max-width: 576px) {

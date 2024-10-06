@@ -221,7 +221,7 @@ button:focus {
   background-clip: content-box, border-box;
   background-image: linear-gradient(to right, #9dc183 0%, #1f261a 100%), radial-gradient(circle at top left, #9dc183, #1f261a);
   border: double 2px transparent;
-  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  box-shadow: 0px 10px 30px #9dc183;
 }
 .primary_btn span {
   padding: 0 42px;
@@ -236,7 +236,7 @@ button:focus {
   background-image: linear-gradient(to right, #9dc183 0%, #1f261a 100%), radial-gradient(circle at top left, #9dc183, #1f261a);
   border: double 2px transparent;
   color: #ffffff;
-  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  box-shadow: 0px 10px 30px #9dc183;
 }
 .primary_btn:hover {
   background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #9dc183, #1f261a);
@@ -3983,7 +3983,7 @@ h6 {
   padding: 0 20px;
 }
 .footer_area .footer_social a i {
-  color: #788489;
+  color: #788489 !important;
   font-size: 22px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -4011,5 +4011,45 @@ h6 {
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+.navbar.dark-mode {
+  background-color: #1f1f1f !important;
+}
+
+.navbar.dark-mode .nav-link {
+  color: #ffffff !important;
+}
+
+.dark-mode .primary_btn {
+  background-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+#dark-mode-toggle i {
+  font-size: 0.5rem; /* Adjusted size */
+  color: #000000; /* Default color (black) */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+#dark-mode-toggle:hover i {
+  color: #9dc183; /* Change to primary color on hover */
+}
+
+/* Dark mode styles */
+body.dark-mode #dark-mode-toggle i {
+  color: #ffffff; /* Change to white-ish color in dark mode */
+}
+
+body.dark-mode #dark-mode-toggle:hover i {
+  color: #9dc183; /* Change to primary color on hover in dark mode */
+}
+
+#dark-mode-toggle i {
+  font-size: 1.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
